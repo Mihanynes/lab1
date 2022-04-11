@@ -51,6 +51,5 @@ void* mult(vector* a, vector* b, void* (*fun)(vector* , vector* )){
 }
 
 void copy(vector** massive_vect){
-    vector** massive_copy = malloc(sizeof(massive_vect));
-    memcpy(massive_copy, massive_vect, sizeof(massive_vect) );
+
 }
