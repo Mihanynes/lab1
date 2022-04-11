@@ -50,6 +50,10 @@ void* mult(vector* a, vector* b, void* (*fun)(vector* , vector* )){
     return (void*)result;
 }
 
-void copy(vector** massive_vect){
-
+vector** copy(vector** massive_vect, int n){
+    vector** res = malloc(n*sizeof(vector));
+    for(int i = 0; i < n; i++){
+       res = massive_vect;
+    }
+    return res;
 }

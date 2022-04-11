@@ -6,6 +6,7 @@ int main(){
     printf("1.Действительные\n2.Комплексные\n");
     int choose = 0, n = 0, cout1 = 0, cout2 = 0;
     scanf("%d", &choose);
+    if(choose == 1 || choose == 2){
     printf("Введите количество векторов:\n");
     scanf("%d", &n);
     if (n < 2){
@@ -23,8 +24,14 @@ int main(){
         printf("Выберите номера векторов, для которых посчитать сумму и произведение:\n");
         scanf("%d",&cout1);
         scanf("%d",&cout2);
+        vector** massive_copy = malloc(n*sizeof(vector));
+        massive_copy = copy(massive_vect, n);
         if(cout1 <= n || cout1 <= n)
+        {
             out_double(massive_vect[cout1], massive_vect[cout2]);
+            printf("\n");
+            out_double(massive_copy[cout1], massive_copy[cout2]);
+        }
         else
             printf("Выбрано неверное значение!");
         for(int i = 0; i < n; i++)
@@ -47,4 +54,7 @@ int main(){
     }
 
     return 0;
+    }
+    else
+        printf("Неверное значение");
 }
