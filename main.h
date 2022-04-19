@@ -43,6 +43,7 @@ scalar* mult_for_comp(double a1, double b1, double a2, double b2);
 void* mult_double(vector* a, vector* b);
 void* mult_complex(vector* a, vector* b);
 void* mult(vector* a, vector* b, void* (*fun)(vector* , vector* ));
+vector** copy(vector** massive_vect, int n);
 
 
 #endif // MAIN_H_INCLUDED
